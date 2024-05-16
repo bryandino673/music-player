@@ -13,7 +13,7 @@ const Home = (props) => {
   } = process.env;
 
   const handleLogin = () => {
-    window.location = `${REACT_APP_AUTHORIZE_URL}?client_id=${REACT_APP_CLIENT_ID}&redirect_uri=${REACT_APP_REDIRECT_URL}&response_type=token&show_dialog=true`;
+    window.location = `https://accounts.spotify.com/authorize?client_id=05a4842406164c5c939f1a042ab5484b&redirect_uri=http://localhost:3000&response_type=token&show_dialog=true`;
   };
 
   const { isValidSession, location } = props;

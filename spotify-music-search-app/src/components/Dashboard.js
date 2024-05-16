@@ -8,10 +8,10 @@ import {
 } from '../actions/result';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
-import SearchResult from './SearchResult';
+import SearchResult from '../components/SearchResult';
 import SearchForm from './SearchForm';
-import Header from './Header';
-import Loader from './Loader';
+import Header from '../components/Header';
+import Loader from '../components/Loader'
 
 const Dashboard = (props) => {
   const [isLoading, setIsLoading] = useState(false);
